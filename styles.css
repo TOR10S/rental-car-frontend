@@ -1,0 +1,15 @@
+body {
+  background-color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  color: #101828;
+}
+
+a {
+  text-decoration: none;
+  color: #101828;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
