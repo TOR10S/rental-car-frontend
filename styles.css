@@ -2,6 +2,9 @@ body {
   background-color: #ffffff;
   font-family: "Manrope", sans-serif;
   color: #101828;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 a {
@@ -11,5 +14,164 @@ a {
 
 ul,
 ol {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 60px 0px;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+}
+
+.logo {
+  font-weight: 900;
+  text-align: center;
+}
+
+.logo span {
+  color: #00aad4;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #00aad4;
+}
+
+.home {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Home.jpg);
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.h1-home {
+  margin-top: 376px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  max-width: 783px;
+  margin-bottom: 16px;
+}
+
+.h2-home {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  max-width: 585px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.link-home {
+  background-color: #00aad4;
+  color: #ffffff;
+  display: block;
+  max-width: 276px;
+  margin: 0 auto;
+  font-weight: 600;
+  padding: 12px 88px;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.link-home:hover,
+.link-home:active {
+  background-color: #0095ba;
+}
+
+.car-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car-list-li {
+  width: calc((100% - (32px * 3)) / 4);
+  max-width: 300px;
+  padding: 16px;
+  box-shadow: 0px 0px 5px rgb(44, 44, 44);
+  border-radius: 6px;
+}
+
+.car-img {
+  max-width: 100%;
+  border-radius: 14px;
+}
+
+.car-main-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.car-name {
+}
+
+.car-sub-info {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.car-link {
+  border-radius: 12px;
+  text-align: center;
+  background-color: #00aad4;
+  padding: 12px 81px;
+  color: #ffffff;
+  font-weight: 600;
+  display: block;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+.car-link:hover,
+.car-link:active {
+  background-color: #0095ba;
 }

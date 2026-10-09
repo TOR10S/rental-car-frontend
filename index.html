@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -19,46 +19,88 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="">RentalCar</a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Catalog</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="header-nav">
+          <a href="" class="logo">Rental<span>Car</span></a>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="">Home</a></li>
+            <li><a class="nav-link" href="">Catalog</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>Find your perfect rental car</h1>
-        <p>Reliable and budget-friendly rentals for any journey</p>
-        <a href="">View Catalog</a>
+      <section class="home">
+        <div class="container">
+          <h1 class="h1-home">Find your perfect rental car</h1>
+          <h2 class="h2-home">
+            Reliable and budget-friendly rentals for any journey
+          </h2>
+          <a class="link-home" href="">View Catalog</a>
+        </div>
       </section>
 
       <section>
-        <ul>
-          <li>
-            <img src="" alt="car-img" />
-            <h2>car name model and year</h2>
-            <p>price</p>
-            <p>info</p>
-            <a href="">Read more</a>
-          </li>
-          <li>
-            <img src="" alt="car-img" />
-            <h2>car name model and year</h2>
-            <p>price</p>
-            <p>info</p>
-            <a href="">Read more</a>
-          </li>
-          <li>
-            <img src="" alt="car-img" />
-            <h2>car name model and year</h2>
-            <p>price</p>
-            <p>info</p>
-            <a href="">Read more</a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="car-list">
+            <li class="car-list-li">
+              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
+              <div class="car-main-info">
+                <p class="car-name">car name <span>model</span> and year</p>
+                <p class="car-price">price</p>
+              </div>
+              <p class="car-sub-info">
+                Kiev | Ukraine | Luxury car rentals | suv | 9582km
+              </p>
+              <a href="" class="car-link">Read more</a>
+            </li>
+            <li class="car-list-li">
+              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
+              <div class="car-main-info">
+                <p class="car-name">car name <span>model</span> and year</p>
+                <p class="car-price">price</p>
+              </div>
+              <p class="car-sub-info">
+                Kiev | Ukraine | Luxury car rentals | suv | 9582km
+              </p>
+              <a href="" class="car-link">Read more</a>
+            </li>
+            <li class="car-list-li">
+              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
+              <div class="car-main-info">
+                <p class="car-name">car name <span>model</span> and year</p>
+                <p class="car-price">price</p>
+              </div>
+              <p class="car-sub-info">
+                Kiev | Ukraine | Luxury car rentals | suv | 9582km
+              </p>
+              <a href="" class="car-link">Read more</a>
+            </li>
+            <li class="car-list-li">
+              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
+              <div class="car-main-info">
+                <p class="car-name">car name <span>model</span> and year</p>
+                <p class="car-price">price</p>
+              </div>
+              <p class="car-sub-info">
+                Kiev | Ukraine | Luxury car rentals | suv | 9582km
+              </p>
+              <a href="" class="car-link">Read more</a>
+            </li>
+            <li class="car-list-li">
+              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
+              <div class="car-main-info">
+                <p class="car-name">car name <span>model</span> and year</p>
+                <p class="car-price">price</p>
+              </div>
+              <p class="car-sub-info">
+                Kiev | Ukraine | Luxury car rentals | suv | 9582km
+              </p>
+              <a href="" class="car-link">Read more</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
