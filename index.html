@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
-
+    <script src="./script.js" defer></script>
     <title>Rental Cars</title>
   </head>
   <body>
@@ -43,63 +43,62 @@
 
       <section>
         <div class="container">
-          <ul class="car-list">
-            <li class="car-list-li">
-              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
-              <div class="car-main-info">
-                <p class="car-name">car name <span>model</span> and year</p>
-                <p class="car-price">price</p>
+          <form action="" class="filter-form">
+            <div>
+              <label for="car-brand" class="form-label">Car brand</label>
+              <select name="" id="car-brand" class="form-select">
+                <option value="" selected disabled hidden>
+                  Enter the text
+                </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="0">0</option>
+              </select>
+            </div>
+            <div>
+              <label for="car-brand" class="form-label">C</label>
+              <select name="" id="car-brand" class="form-select">
+                <option value="" selected disabled hidden>
+                  Enter the text
+                </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="0">0</option>
+              </select>
+            </div>
+
+            <div class="miles">
+              <div>
+                <label for="" class="form-label">miles</label>
+                <input
+                  type="text"
+                  placeholder="From"
+                  class="form-input first-input"
+                />
               </div>
-              <p class="car-sub-info">
-                Kiev | Ukraine | Luxury car rentals | suv | 9582km
-              </p>
-              <a href="" class="car-link">Read more</a>
-            </li>
-            <li class="car-list-li">
-              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
-              <div class="car-main-info">
-                <p class="car-name">car name <span>model</span> and year</p>
-                <p class="car-price">price</p>
+              <div>
+                <label for="" class="form-label"></label>
+                <input type="text" placeholder="To" class="form-input" />
               </div>
-              <p class="car-sub-info">
-                Kiev | Ukraine | Luxury car rentals | suv | 9582km
-              </p>
-              <a href="" class="car-link">Read more</a>
-            </li>
-            <li class="car-list-li">
-              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
-              <div class="car-main-info">
-                <p class="car-name">car name <span>model</span> and year</p>
-                <p class="car-price">price</p>
-              </div>
-              <p class="car-sub-info">
-                Kiev | Ukraine | Luxury car rentals | suv | 9582km
-              </p>
-              <a href="" class="car-link">Read more</a>
-            </li>
-            <li class="car-list-li">
-              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
-              <div class="car-main-info">
-                <p class="car-name">car name <span>model</span> and year</p>
-                <p class="car-price">price</p>
-              </div>
-              <p class="car-sub-info">
-                Kiev | Ukraine | Luxury car rentals | suv | 9582km
-              </p>
-              <a href="" class="car-link">Read more</a>
-            </li>
-            <li class="car-list-li">
-              <img src="./img/Home.jpg" class="car-img" alt="car-img" />
-              <div class="car-main-info">
-                <p class="car-name">car name <span>model</span> and year</p>
-                <p class="car-price">price</p>
-              </div>
-              <p class="car-sub-info">
-                Kiev | Ukraine | Luxury car rentals | suv | 9582km
-              </p>
-              <a href="" class="car-link">Read more</a>
-            </li>
-          </ul>
+            </div>
+            <div class="form-btns">
+              <button type="submit" class="filter-btn">Search</button>
+              <button class="reset-btn">Clear filters</button>
+            </div>
+          </form>
+          <ul class="car-list"></ul>
         </div>
       </section>
 

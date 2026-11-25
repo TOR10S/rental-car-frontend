@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   font-family: "Manrope", sans-serif;
   color: #101828;
   font-size: 16px;
@@ -71,6 +71,10 @@ section {
   gap: 32px;
 }
 
+.nav-link {
+  transition: color 300ms linear 15ms;
+}
+
 .nav-link:hover,
 .nav-link:active {
   color: #00aad4;
@@ -79,8 +83,10 @@ section {
 .home {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/Home.jpg);
+  background-color: #101828;
   margin: 0 auto;
   max-width: 1440px;
+  background-position: center;
 }
 
 .h1-home {
@@ -116,6 +122,7 @@ section {
   padding: 12px 88px;
   border-radius: 12px;
   margin: 0 auto;
+  transition: background-color 300ms linear 0ms;
 }
 
 .link-home:hover,
@@ -136,6 +143,13 @@ section {
   padding: 16px;
   box-shadow: 0px 0px 5px rgb(44, 44, 44);
   border-radius: 6px;
+  transition: transform 200ms linear 10ms;
+  background-color: #ffffff;
+}
+
+.car-list-li:hover,
+.car-list-li:active {
+  transform: scale(1.066);
 }
 
 .car-img {
@@ -167,11 +181,92 @@ section {
   color: #ffffff;
   font-weight: 600;
   display: block;
-  max-width: 270px;
+  max-width: 268px;
   margin: 0 auto;
+  transition: background-color 300ms linear 0ms;
 }
 
 .car-link:hover,
 .car-link:active {
   background-color: #0095ba;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 55px;
+  align-items: flex-start;
+}
+
+.filter-btn {
+  min-width: 156px;
+  padding: 12px 51px;
+  border-radius: 12px;
+  background-color: #00aad4;
+  color: #ffffff;
+  border: none;
+  transition: background-color 300ms linear 0ms;
+  font-weight: 600;
+  line-height: 20px;
+}
+.filter-btn:hover,
+.filter-btn:active {
+  cursor: pointer;
+  background-color: #0095ba;
+}
+
+.form-label {
+  color: #8d929a;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.form-select {
+  width: 204px;
+  padding: 12px 16px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.miles {
+  display: flex;
+  align-items: flex-end;
+}
+.form-input {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+}
+.form-input::placeholder {
+  color: inherit;
+}
+.form-input:focus {
+  outline: none;
+}
+.first-input {
+  border-right: 1px solid #dadde1;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.form-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.reset-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: #8d929a;
+  line-height: 16px;
+  font-weight: 400;
+  cursor: pointer;
 }
